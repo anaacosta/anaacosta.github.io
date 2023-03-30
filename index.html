@@ -1,74 +1,410 @@
-<html>
-
+<!DOCTYPE html>
+|<html lang="es">
 <head>
-     <title>Creando mi Cv Html y Css</title>
-     <link rel="stylesheeet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cv Any Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
-     <header>
-        <nav>
-            <ul>
-               <li>Home</li>
-               <li>projects</li>
-              <li>contact</li>
-           </ul>
-       </nav>
-  </header>
-<main>
-        <section id="hero">
-          <h1>Ana lujan Acosta</h1>
-          <h2>Junior developer & treiner</h2>
-        </section>
-        
-        <section id="projects">
-             <h2>proyectos realizados</h2>
-         <div class="project-list">
-
-             <div class="project-detail">
-               <img src="imagenes/project1.jpg">
-               <h3>Proyecto 1</h3>
-               <p>Descripcion del proyecto</p>
-               <a href="https://www.google.com.ar">enlace al proyecto </a>
-             </div>
-
-             <div class="project-detail">
-              <img src="imagenes/project2.jpg">
-              <h3>Proyecto 2</h3>
-              <p>Descripcion del proyecto</p>
-              <a href="https://www.google.com.ar">enlace al proyecto </a>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Any♥</a>
             </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
 
-            <div class="project-detail">
-              <img src="imagenes/project3.jpg">
-              <h3>Proyecto 3</h3>
-              <p>Descripcion del proyecto</p>
-              <a href="https://www.google.com.ar">enlace al proyecto </a>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpeg">
             </div>
-         </div>   
-        </section>
-        <section id="contact">
-              <h2>llamado directo</h2>
-          <form>
+            <h1>Ana Lujan Acosta</h1>
+            <h2> Cifrador Junior</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
 
-            <div>
-                <label>Nombre</label>
-                <input type="text">
-            </div>
-            <div>
-              <label>Asunto</label>
-              <input type="text" placeholder="Escribe tu mensaje">
-            </div>
-            <div>
-              <label>Mensaje</label>
-              <textarea></textarea>
-            </div>
-            <button>Enviar</button>
-          </form>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span> ¡Hola! les escribe Ana Acosta. </span>
+              
+                Bienvenidos a mi portfolio. Les comento que estoy super agredecida de poder estar conectada con ustedes.
+                
+                Soy de Avellaneda, buenos aires (Argentina), aqui vivo con mis padres.
+                
+                
+               - ♠Intropectiva, Activa, Compañera, con energia positiva, emprendedora, me gusta programar desde los 15 Años, busco siempre aprender y compartir mi experiencia, el paso a paso es el unico
+                  compañero del camino, me gusta diseñar y poder plasmar en la red mis proyectos, también admiro las cosas bellas como el mar, las montañas, un cafe!, para poder recrear la mente.  </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Email:</strong>
+                             anaacosta566@gmail.com
+                        </li>
+                        <li>
+                            <strong>Fecha Nacimiento:</strong>
+                            08/04/1987
+                        </li>
+                        <li>
+                            <strong>Telefono:</strong>
+                            11-22222232
+                        </li>
+                        <li>
+                            <strong>Website:</strong>
+                            https://www.facebook.com/TyzhaShoes
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                              Avellaneda buenos aires, Argentina.
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
 
-        </section>
-    </main>
-  <footer></footer>  
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses Hobbies</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUGAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA VARIADA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES Y PASEOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS Y MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOGRAFIA</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                ARCHIVAR CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Instituto</h4>
+                        <span class="Colegio"> Instituto Simon Bolivar</span>
+                        <span class="fecha"> 2003 - 2010</span>
+                        <p> Primario // Secundario</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>DISEÑO WEB</h4>
+                        <span class="Colegio">NEXT'U ACADEMY</span>
+                        <span class="fecha">2016 - 2017</span>
+                          <p>Next'u Academy (LENGUAJE CODIGO HTML, CSS, js) </p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Marketing y publicidad</h4>
+                        <span class="casa">Academia Avellaneda</span>
+                        <span class="fecha">2010 - 2010</span>
+                        <p>Desarrollo, ventas, atencion, resolucion, actualizacion de redes sociales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa"> Tyzha shoes by Any</span>
+                        <span class="fecha">2009 - 2020</span>
+                        <p> Ventas, Coach Emprendimientos, Redes sociales, mantenimiento, publicidad, clientes online / offline, publicidad, Administracion de paginas y Marketing </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Restaurant NicoBar</h4>
+                        <span class="casa">NicoBar</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p> Creacion de pagina WEB y progracion, Manejo de facturacion, sistema, Publicidad, redes sociales, mantenimiento, marketing, ventas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/My project.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Trabajo en equipo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/My project-1 (1).png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Img2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Codigos.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre // apellido">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Avellaneda, buenos aires Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contacto whatsapp: 1138383838
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: AC@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
